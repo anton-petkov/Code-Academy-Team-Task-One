@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 const float fPriceStandart = 120.00F;
 const float fPriceLux = 180.00F;
 const float fDiscountFifteen = 0.85F;
@@ -35,12 +36,13 @@ void calculateTotalWithoutTF()
 
 void printOrder()
 {
-    printf("You have reserved %d Standart rooms, %d Luxury Rooms, "
+    printf("Your offer includes %d Standart rooms, %d Luxury Rooms, "
            "for %d nights for the total price of %.2f lv.\n",
            iNumofStandart, iNumofLux, iNumOfNights, getTotal());
     printf("Assigned discount: %s \n", assignedBonusName);
     printf("In the price there is 6 %% Tourist fee included!\n");
-    printf("The offer is valid for 14 days!");
+    printf("The offer is valid for 14 days!\n");
+    printf("The number od your offer is %d!", rand());
 }
 
 int main()
