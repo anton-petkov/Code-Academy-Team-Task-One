@@ -45,9 +45,10 @@ void printOrder()
 
 int main()
 {
-    printf("How many standart rooms would you like?");
+    printf("Welcome to \"The MAN`s Hotel\"(Martin Anton Nikolay)!\n");
+    printf("How many standart rooms would you like?(120 lv. per room for one night)");
     scanf("%d", &iNumofStandart);
-    printf("How many lux rooms would you like?");
+    printf("How many lux rooms would you like?(180 lv. per room for one night)");
     scanf("%d", &iNumofLux);
     printf("How many nights would you stay?");
     scanf("%d", &iNumOfNights);
